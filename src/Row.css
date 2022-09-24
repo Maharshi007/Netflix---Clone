@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.row{
+    color: #fff;
+    margin: 0 15px;
+    
+}
+
+.row h2{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+.row-posters{
+    display: flex;
+    padding: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+.row-posters::-webkit-scrollbar{
+    display: none;
+}
+.poster{
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 700ms;
+    cursor: pointer;
+}
+
+.poster:hover{
+    transform: scale(1.08);
+    opacity: 0.8;
+}
+
+.posterLarge{
+    max-height: 250px;
+}
